@@ -1,7 +1,14 @@
 const express = require("express");
+const connectDB = require("./config/db");
 
 const app = express();
 
+// connect database
+connectDB();
+
+// Init middleware like bodyParser
+app.use(express.json({extended: false}));
+ 
 
 app.get("/", (req, res) => 
     res.json( {msg: "welcome to the messagekeepr API"} )
