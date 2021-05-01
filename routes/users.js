@@ -7,7 +7,7 @@ const jwt = require("jsonwebtoken");
 const config = require("config");
 
 // user schema and model
-const User = require("../models/User");
+const User = require("../models/User"); 
 
 
 // @route           POST api/users
