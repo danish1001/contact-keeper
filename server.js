@@ -9,7 +9,6 @@ connectDB();
 
 // Init middleware like bodyParser 
 app.use(express.json({extended: false}));
- 
 
 // app.get("/", (req, res) => 
 //     res.json( {msg: "welcome to the messagekeepr API"} )

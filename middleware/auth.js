@@ -5,7 +5,7 @@ module.exports = function(req, res, next) {
     // Get token from the header
     const token = req.header("x-auth-token");
 
-    
+     
 
     // Check if not token
     if(!token) {
@@ -20,6 +20,6 @@ module.exports = function(req, res, next) {
     } catch (error) {
         res.status(401).json({ msg: "token is not valid" });
     }
-
+ 
 
 }

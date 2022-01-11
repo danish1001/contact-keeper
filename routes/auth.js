@@ -8,7 +8,7 @@ const User = require("../models/User");
 const auth = require("../middleware/auth"); // token header file
 
 
-// @route           GET api/auth
+// @route           GET api/auth 
 // @desc            Get Logged in user
 // @access          private
 router.get("/", auth, async (req, res) => {
